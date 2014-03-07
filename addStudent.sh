@@ -5,9 +5,6 @@ number=`echo "$line" | tr -cd , | wc -c`
 number=$(($number-2))
 while IFS=", " read key lname fname rest
 do
-	key1=`echo $key | sed 's/^ //'`
-	lname1=`echo $lname | sed 's/^ //'`
-	fname1=`echo $fname | sed 's/^ //'`
 	if [ $1 = $key ] && [ $2 = $lname ] && [ $3 = $fname ]
 	then
 		echo "Student already exists"
