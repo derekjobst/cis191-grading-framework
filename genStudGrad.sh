@@ -1,9 +1,8 @@
 #!/bin/bash
 file="191_sample.csv"
-read fline < $file
-IFS=", " arr=($fline)
+IFS=", " read -a arr < $file
 
-col=2
+col=0
 for i in ${arr[@]};
 do 
 	if [ $i = $2 ]
