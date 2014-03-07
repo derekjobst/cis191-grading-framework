@@ -3,7 +3,7 @@ file="database.csv"
 
 name=${2}_${1}_backup
 
-tar -cf ${name}.tar ./191_sample.csv
+tar -cf ${name}.tar ./database.csv
 
 while IFS=", " read line
 do
