@@ -1,5 +1,5 @@
 #!/bin/bash
-file="191_sample.csv"
+file="database.csv"
 read line < $file
 number=`echo "$line" | tr -cd , | wc -c`
 number=$(($number-2))

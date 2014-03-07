@@ -1,5 +1,5 @@
 #!/bin/bash
-file="191_sample.csv"
+file="database.csv"
 read fline < $file
 IFS=", " arr=($fline)
 
