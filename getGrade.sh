@@ -1,5 +1,5 @@
 #!/bin/bash
-file="191_sample.csv"
+file="database.csv"
 
 f=`sed -n '1p' < $file`
 IFS=", " read -a firsta <<< "$f"

@@ -1,5 +1,5 @@
 #!/bin/bash
-file="191_sample.csv"
+file="database.csv"
 while IFS=", " read pennkey rest
 do
 	if [ $pennkey != "PENNKEY" ]

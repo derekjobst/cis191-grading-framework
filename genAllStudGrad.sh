@@ -1,5 +1,5 @@
 #!/bin/bash
-file="191_sample.csv"
+file="database.csv"
 
 mkdir "$1"
 cp $file ${1}/
