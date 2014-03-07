@@ -2,7 +2,7 @@
 file="191_sample.csv"
 read -p "Are you sure? [y/N] " res
 case $res in
-	[Yy])
+	[Yy]|[Yy][Ee][Ss])
 	        while IFS=", " read key lname fname rest
 		do
 			if [ $1 = $key ] && [ $2 = $lname ] && [ $3 = $fname ]
@@ -14,11 +14,8 @@ case $res in
 		echo "Student doesn't exist."
 		return 0
 	        ;;
-	[Nn])
-		echo "You chose no."        
+	*)
+		echo "You didn't choose yes."        
 		return 0
 	        ;;
-	*) 
-		echo "Please answer yes or no."
-		;;
 esac
