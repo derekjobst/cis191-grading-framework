@@ -23,5 +23,4 @@ do
 	fi
 	((i = i + 1))
 done
-
-
+echo "" >> $file
