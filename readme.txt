@@ -68,6 +68,16 @@ Displays list of total class grade as a fraction to the terminal window. The arg
 
 Example: $ source allStudGrad.sh database.csv
 
+genStudGrad
+pennkey assignment_name
+returns grade for one student on one assingment
+
+
+genAllStudGrad
+assignment_name
+returns all grades in class for a particular assignment
+
+
 
 emailGrade
 pennkey assignment_name
