@@ -18,8 +18,6 @@ do
 	if [ $i -ne $number ]
 	then
 		echo -n ", 0" >> $file
-	else
-		echo ", 0" >> $file
 	fi
 	((i = i + 1))
 done
