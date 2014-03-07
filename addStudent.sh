@@ -5,7 +5,7 @@ number=`echo "$line" | tr -cd , | wc -c`
 number=$(($number-2))
 while IFS=", " read key lname fname rest
 do
-	if [ $1 = $key ] && [ $2 = $lname ] && [ $3 = $fname ]
+	if [ $1 = $key ]
 	then
 		echo "Student already exists"
 		return 0
