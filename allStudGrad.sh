@@ -1,8 +1,8 @@
 #!/bin/bash
-file="database.csv"
+file="$1"
 
 function get_total {
-	IFS=", " read -a array <<< "$1"
+	IFS=", " read -a array <<< "$@"
 	t=0
 	i=3
 	while [ $i -lt ${#array[@]} ]

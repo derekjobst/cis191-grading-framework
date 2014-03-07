@@ -1,7 +1,6 @@
 #!/bin/bash
 file="database.csv"
 
-function get_total {
 IFS=", " read -a arr < $file
 
 col=0
@@ -36,4 +35,3 @@ do
 		echo "Grade: ${score}/${total}" >> $newFile
 	fi
 done < $file
-
