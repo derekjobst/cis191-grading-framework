@@ -3,7 +3,7 @@ file="database.csv"
 
 name=${2}_${1}_backup
 
-tar -cvf ${name}.tar ./191_sample.csv
+tar -cf ${name}.tar ./191_sample.csv
 
 while IFS=", " read line
 do
@@ -13,10 +13,9 @@ do
 		for i in $(find -name "${array[0]}*"); 
 		do
 			tmp=`sed "s/\n/ /g" <<< $i`
-			tar -rvf ${name}.tar $tmp
+			tar -rf ${name}.tar $tmp
 		done
 	fi
 done < $file
 
-tar -czf ${name}.tar.gz ${name}.tar
-rm -rf ${name}.tar
+gzip ${name}.tar
